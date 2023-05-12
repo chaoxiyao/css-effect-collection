@@ -1,0 +1,70 @@
+body {
+    background-color: #e1e1e1;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 300px;
+    border-radius: 20px;
+    background: url(/58.人物展示卡片/src=http___ww2.sinaimg.cn_mw690_0061y8qzly1h8dsu8kjkqj30om1hc48b.jpg&refer=http___www.sina.webp) center center no-repeat;
+    background-size: 300px;
+    box-shadow: 0 70px 60px -60px #000;
+}
+
+.border {
+    position: relative;
+    height: 340px;
+    width: 260px;
+    background: transparent;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.border:hover {
+    opacity: 0.6;
+    border: 3px solid #fff;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    height: 160px;
+    width: 50px;
+    top: 175px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.card h2{
+    font-family: sans-serif;
+    color: #fff;
+    margin: 20px;
+}
+
+.card ion-icon:hover{
+    opacity: 0.5;
+}
+
+.card:hover{
+    background: url(/58.人物展示卡片/src=http___ww2.sinaimg.cn_mw690_0061y8qzly1h8dsu8kjkqj30om1hc48b.jpg&refer=http___www.sina.webp) right center no-repeat;
+    background-size: 500px;
+}
+
+.card,.border,.card h2,.card ion-icon{
+    transition: background 1s,opacity 0.7s;
+}
